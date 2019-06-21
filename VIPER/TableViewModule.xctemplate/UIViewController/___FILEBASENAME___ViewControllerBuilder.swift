@@ -3,7 +3,7 @@
 //  ___PROJECTNAME___
 //
 //  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright (c) ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
+//  Copyright (c) ___YEAR___ All rights reserved.
 //
 
 import UIKit
@@ -18,15 +18,13 @@ final class ___VARIABLE_sceneName___ViewControllerBuilder: ___VARIABLE_sceneName
             fatalError("Could not load nib")
         }
         
-        let presenter = ___VARIABLE_sceneName___ViewPresenter()
         let router = ___VARIABLE_sceneName___ViewRouter()
         let interactor = ___VARIABLE_sceneName___ViewInteractor()
+        let presenter = ___VARIABLE_sceneName___ViewPresenter(interactor: interactor, router: router)
         
         viewController.output = presenter
         
         presenter.view = viewController
-        presenter.router = router
-        presenter.interactor = interactor
         
         router.viewController = viewController
         

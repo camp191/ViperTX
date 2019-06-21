@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>DefaultCompletionName</key>
-	<string>MyScene</string>
+	<string>ViewControllerModule</string>
 	<key>Description</key>
 	<string>This generates a new scene using VIPER architecture. It consists of the view controller, interactor, presenter, and router. You can then create individual workers to supplement the interactor.</string>
 	<key>Kind</key>
@@ -144,7 +144,7 @@
 		<string>com.apple.platform.iphoneos</string>
 	</array>
 	<key>SortOrder</key>
-	<string>0</string>
+	<string>2</string>
 	<key>Summary</key>
 	<string>This generates a new scene using VIPER architecture.</string>
 </dict>
