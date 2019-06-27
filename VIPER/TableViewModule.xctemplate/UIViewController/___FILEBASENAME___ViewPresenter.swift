@@ -9,9 +9,9 @@
 import UIKit
 
 final class ___VARIABLE_sceneName___ViewPresenter: ___VARIABLE_sceneName___ViewOutput {
-    weak var view: ___VARIABLE_sceneName___ViewInput?
-    var router: ___VARIABLE_sceneName___RouterInput
-    var interactor: ___VARIABLE_sceneName___ViewInteractorInput
+    private weak var view: ___VARIABLE_sceneName___ViewInput?
+    private let router: ___VARIABLE_sceneName___RouterInput
+    private let interactor: ___VARIABLE_sceneName___ViewInteractorInput
     
     init(
         interactor: ___VARIABLE_sceneName___ViewInteractorInput,
