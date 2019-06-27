@@ -23,6 +23,7 @@ final class ___VARIABLE_sceneName___ViewControllerBuilder: ___VARIABLE_sceneName
         let presenter = ___VARIABLE_sceneName___ViewPresenter(interactor: interactor, router: router)
         
         viewController.output = presenter
+        viewController.tableViewPresenter = presenter
         
         presenter.view = viewController
         

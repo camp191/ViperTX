@@ -9,5 +9,5 @@
 import UIKit
 
 final class ___VARIABLE_sceneName___ViewInteractor: ___VARIABLE_sceneName___ViewInteractorInput {
-    weak var output: ___VARIABLE_sceneName___ViewInteractorOutput?
+    private weak var output: ___VARIABLE_sceneName___ViewInteractorOutput?
 }

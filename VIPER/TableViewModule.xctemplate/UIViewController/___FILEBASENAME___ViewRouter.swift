@@ -9,5 +9,5 @@
 import UIKit
 
 final class ___VARIABLE_sceneName___ViewRouter: ___VARIABLE_sceneName___RouterInput {
-    weak var viewController: UIViewController?
+    private weak var viewController: UIViewController?
 }
