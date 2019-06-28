@@ -36,7 +36,7 @@ protocol ___VARIABLE_sceneName___TableViewPresenter {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
 }
 
-protocol ___VARIABLE_sceneName___CellDataCell {
+protocol ___VARIABLE_sceneName___CellDelegate {
     func configure(data: ___VARIABLE_sceneName___CellData, viewPresenter: ___VARIABLE_sceneName___ViewOutput)
 }
 

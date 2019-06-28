@@ -48,6 +48,10 @@ extension ___VARIABLE_sceneName___ViewController: UITableViewDelegate, UITableVi
         let cellData = tableViewPresenter.tableView(tableView, cellForRowAt: indexPath)
         
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: cellData.cellType), for: indexPath)
+
+        if let cell = cell as? ___VARIABLE_sceneName___CellDelegate {
+            cell.configure(data: cellData, viewPresenter: output)
+        }
         
         return cell
     }
