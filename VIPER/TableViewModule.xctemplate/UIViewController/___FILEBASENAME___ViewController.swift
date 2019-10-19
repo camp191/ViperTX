@@ -15,7 +15,7 @@ final class ___VARIABLE_sceneName___ViewController: UIViewController, NibLoader 
     #error("Don't forget to bind this IBOutlet to Nib")
     @IBOutlet weak var tableView: BditTableView!
 
-    var output: ___VARIABLE_sceneName___ViewOutput?
+    var output: ___VARIABLE_sceneName___ViewOutput!
     var tableViewPresenter: ___VARIABLE_sceneName___TableViewPresenter!
     
     override func viewDidLoad() {
@@ -24,7 +24,7 @@ final class ___VARIABLE_sceneName___ViewController: UIViewController, NibLoader 
         tableViewPresenter?.initTableView(tableView)
         tableView.showLoadingMoreIndicator = true
         
-        output?.viewIsReady()
+        output.viewIsReady()
         tableView.bditTableViewDataSource = self
         tableView.dataSource = self
         tableView.delegate = self

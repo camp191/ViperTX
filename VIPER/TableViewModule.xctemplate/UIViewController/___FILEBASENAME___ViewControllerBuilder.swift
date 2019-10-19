@@ -20,15 +20,14 @@ final class ___VARIABLE_sceneName___ViewControllerBuilder: ___VARIABLE_sceneName
         
         let router = ___VARIABLE_sceneName___ViewRouter()
         let interactor = ___VARIABLE_sceneName___ViewInteractor()
-        let presenter = ___VARIABLE_sceneName___ViewPresenter(interactor: interactor, router: router)
+        let presenter = ___VARIABLE_sceneName___ViewPresenter(
+                                                    interactor: interactor,
+                                                    router: router)
         
         viewController.output = presenter
         viewController.tableViewPresenter = presenter
-        
         presenter.view = viewController
-        
         router.viewController = viewController
-        
         interactor.output = presenter
         
         return viewController

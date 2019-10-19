@@ -21,8 +21,11 @@ protocol ___VARIABLE_sceneName___ViewInteractorInput {}
 
 protocol ___VARIABLE_sceneName___ViewInteractorOutput: class {}
 
-struct ___VARIABLE_sceneName___CellData {
-    let cellType: UITableViewCell.Type
+enum ___VARIABLE_sceneName___CellData {
+    // Place your cell data cases and update the cell type variable below.
+    var cellType: UITableViewCell.Type {
+        return UITableViewCell.self
+    }
 }
 
 protocol ___VARIABLE_sceneName___TableViewPresenter {
