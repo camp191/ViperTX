@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import CommonUI
 
 final class ___VARIABLE_sceneName___ViewPresenter: ___VARIABLE_sceneName___ViewOutput {
-    private weak var view: ___VARIABLE_sceneName___ViewInput?
+    weak var view: ___VARIABLE_sceneName___ViewInput?
     private let router: ___VARIABLE_sceneName___RouterInput
     private let interactor: ___VARIABLE_sceneName___ViewInteractorInput
     
@@ -25,3 +26,26 @@ final class ___VARIABLE_sceneName___ViewPresenter: ___VARIABLE_sceneName___ViewO
 
 extension ___VARIABLE_sceneName___ViewPresenter: ___VARIABLE_sceneName___ViewInteractorOutput {}
 
+extension ___VARIABLE_sceneName___ViewPresenter: ___VARIABLE_sceneName___TableViewPresenter {
+    func initTableView(_ tableView: BditTableView) {
+        let cells: [UITableViewCell.Type] = []
+        
+        tableView.registerCellTypes(cellTypes: cells)
+    }
+    
+    func numberOfSection(in tableView: UITableView) -> Int {
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> ___VARIABLE_sceneName___CellData {
+        #error("Don't forget to return cell data")
+    }
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {}
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {}
+}

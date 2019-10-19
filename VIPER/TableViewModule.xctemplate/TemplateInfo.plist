@@ -118,20 +118,6 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_sceneName:identifier___TableViewPresenter</string>
-			<key>Description</key>
-			<string>The TableView Presenter Name</string>
-			<key>Identifier</key>
-			<string>TableViewPresenterName</string>
-			<key>Name</key>
-			<string>TableView Presenter Name:</string>
-			<key>Required</key>
-			<true/>
-			<key>Type</key>
-			<string>static</string>
-		</dict>
-		<dict>
-			<key>Default</key>
 			<string>___VARIABLE_sceneName:identifier___DataFactory</string>
 			<key>Description</key>
 			<string>The Data Factory Name</string>
