@@ -21,7 +21,7 @@ final class ___VARIABLE_sceneName___ViewController: UIViewController, NibLoader 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigation()
-        tableViewPresenter?.initTableView(tableView)
+        tableViewPresenter.initTableView(tableView)
         tableView.showLoadingMoreIndicator = true
         
         output.viewIsReady()
@@ -40,6 +40,10 @@ extension ___VARIABLE_sceneName___ViewController: BditTableViewDataSource {
 }
 
 extension ___VARIABLE_sceneName___ViewController: UITableViewDelegate, UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return tableViewPresenter.numberOfSection(in: tableView)
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return tableViewPresenter.tableView(tableView, numberOfRowsInSection: section)
     }

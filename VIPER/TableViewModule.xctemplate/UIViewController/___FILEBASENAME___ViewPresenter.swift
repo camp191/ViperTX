@@ -14,11 +14,12 @@ final class ___VARIABLE_sceneName___ViewPresenter: ___VARIABLE_sceneName___ViewO
     private let router: ___VARIABLE_sceneName___RouterInput
     private let interactor: ___VARIABLE_sceneName___ViewInteractorInput
     
-    init(
-        interactor: ___VARIABLE_sceneName___ViewInteractorInput,
-        router: ___VARIABLE_sceneName___RouterInput) {
+    init(interactor: ___VARIABLE_sceneName___ViewInteractorInput,
+         router: ___VARIABLE_sceneName___RouterInput,
+         view: ___VARIABLE_sceneName___ViewInput) {
         self.interactor = interactor
         self.router = router
+        self.view = view
     }
     
     func viewIsReady() {}
