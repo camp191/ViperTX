@@ -9,7 +9,7 @@
 import UIKit
 import CommonUI
 
-protocol ___VARIABLE_sceneName___ViewInput: class {}
+protocol ___VARIABLE_sceneName___ViewInput: AnyObject {}
 
 protocol ___VARIABLE_sceneName___ViewOutput {
     func viewIsReady()
@@ -19,7 +19,7 @@ protocol ___VARIABLE_sceneName___RouterInput {}
 
 protocol ___VARIABLE_sceneName___ViewInteractorInput {}
 
-protocol ___VARIABLE_sceneName___ViewInteractorOutput: class {}
+protocol ___VARIABLE_sceneName___ViewInteractorOutput: AnyObject {}
 
 enum ___VARIABLE_sceneName___CellData {
     // Place your cell data cases and update the cell type variable below.
